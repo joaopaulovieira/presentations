@@ -1,0 +1,11 @@
+{
+  "name": "@joaopaulovieira/presentations",
+  "version": "1.0.0",
+  "description": "personal presentations build with reveal.js",
+  "main": "index.js",
+  "author": "vieira.joaopaulo.91@gmail.com",
+  "license": "MIT",
+  "dependencies": {
+    "reveal.js": "^4.1.0"
+  }
+}
