@@ -5,6 +5,9 @@
   "main": "index.js",
   "author": "vieira.joaopaulo.91@gmail.com",
   "license": "MIT",
+  "scripts": {
+    "update-vendor": "rm -rf vendor/ && rsync -r node_modules/reveal.js vendor/"
+  },
   "dependencies": {
     "reveal.js": "^4.1.0"
   }
