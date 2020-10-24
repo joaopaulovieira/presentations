@@ -1,9 +1,9 @@
-.presentations-collection {
+.reveal .presentations-collection {
   flex-wrap: wrap;
   justify-content: center;
 }
 
-.link-component {
+.reveal .link-component {
   /* active when have more than one presentation */
   /* flex-grow: 1; */
   border: 1px #666 solid;
@@ -14,16 +14,16 @@
   display: flex;
 }
 
-.link-component:hover {
-  border: 1px #666 solid !important;
+.reveal .link-component:hover {
+  border: 1px #666 solid;
   opacity: 1;
 }
 
-.link-component__iframe {
+.reveal .link-component__iframe {
   flex-grow: 1;
   border: none;
-  z-index: -1 !important;
+  z-index: -1;
   position: inherit;
-  max-height: 100% !important;
-  max-width: 100% !important;
+  max-height: 100%;
+  max-width: 100%;
 }
