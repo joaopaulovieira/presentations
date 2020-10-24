@@ -3,6 +3,11 @@
   justify-content: center;
 }
 
+.reveal .flex-component {
+  display: flex;
+  align-content: space-around;
+}
+
 .reveal .link-component {
   /* active when have more than one presentation */
   /* flex-grow: 1; */
@@ -11,7 +16,6 @@
   align-self: center;
   opacity: 0.75;
   transition: opacity .3s ease-out;
-  display: flex;
 }
 
 .reveal .link-component:hover {
