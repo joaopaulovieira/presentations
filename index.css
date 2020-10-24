@@ -10,7 +10,7 @@
   border-radius: 2%;
   align-self: center;
   opacity: 0.75;
-  transition: opacity .5s ease-out;
+  transition: opacity .3s ease-out;
   display: flex;
 }
 
