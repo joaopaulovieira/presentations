@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+cp themes/custom.scss vendor/css/theme/source/ &&
+cd vendor &&
+npm i &&
+npm run build -- css-themes &&
+cd ../
+
+echo 'custom themes created!'
