@@ -31,16 +31,3 @@
   max-height: 100%;
   max-width: 100%;
 }
-
-.reveal .paragraph-container {
-  font-size: 15px;
-  margin: 45px;
-  padding: 4%;
-  text-align: left;
-  background-color: #333;
-  border-radius: 3%;
-}
-
-.reveal .paragraph-element {
-  text-align: center;
-}

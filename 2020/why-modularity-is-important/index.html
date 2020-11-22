@@ -7,8 +7,15 @@
   <meta name="author" content="João Paulo Vieira">
   <link rel="shortcut icon" href="../../images/favicon.ico">
   <link rel="stylesheet" href="../../vendor/reveal.js/dist/reveal.css">
-  <link rel="stylesheet" href="../../vendor/reveal.js/dist/theme/black.css">
-  <link rel="stylesheet" href="../../index.css">
+  <link rel="stylesheet" href="../../vendor/reveal.js/dist/theme/blood.css">
+  <style>
+    .paragraph-container .custom-link {
+      color: #0669de;
+    }
+    .paragraph-container .custom-link:hover {
+      color: mediumaquamarine;
+    }
+  </style>
 </head>
 <body>
   <div class="reveal">
@@ -20,14 +27,12 @@
           </div>
         </section>
         <section data-transition="zoom">
-          <div class="flex-component">
-            <div class="paragraph-container">
-              <p class="paragraph-element">Hi! My name is João Paulo</p> 
-              <p class="paragraph-element fragment fade-in-then-out" data-fragment-index="1">But you can call me JP 🤙</p>
-              <p class="fragment" data-fragment-index="2">Front end developer at Grupo Globo (Globo.com)</p>
-              <p class="fragment" data-fragment-index="2">One of the maintainers on Clappr</p>
-              <p class="fragment" data-fragment-index="2">Flamengo fan </p>
-              <p class="fragment" data-fragment-index="2">(is not the 🦩 and the 💃, is the soccer team)</p>
+          <div class="flex-component" style="display: flex; align-items: center; justify-content: space-between;">
+            <div class="paragraph-container" style="background-color: #333; border-radius: 3%; font-size: 18px; text-align: center; padding: 15px;">
+              <p>Hi! My name is João Paulo.</p> 
+              <p class="fragment fade-in-then-out" data-fragment-index="1">But you can call me JP 🤙</p>
+              <p class="fragment" data-fragment-index="2">Front end developer at <a class="custom-link" href="https://globo.com">Grupo Globo</a></p>
+              <p class="fragment" data-fragment-index="2">One of the maintainers of <a class="custom-link" href="http://clappr.io">Clappr</a></p>
               <p class="fragment" data-fragment-index="2">I use this photo to disguise how grumpy I am in most time</p>
             </div>
             <img src="../../images/profile.jpg" width="425px"></img>
