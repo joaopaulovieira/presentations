@@ -6,16 +6,8 @@
   <meta name="description" content="Why modularity is important?">
   <meta name="author" content="João Paulo Vieira">
   <link rel="shortcut icon" href="../../images/favicon.ico">
-  <link rel="stylesheet" href="../../vendor/reveal.js/dist/reveal.css">
-  <link rel="stylesheet" href="../../vendor/reveal.js/dist/theme/blood.css">
-  <style>
-    .paragraph-container .custom-link {
-      color: #0669de;
-    }
-    .paragraph-container .custom-link:hover {
-      color: mediumaquamarine;
-    }
-  </style>
+  <link rel="stylesheet" href="../../vendor/dist/reveal.css">
+  <link rel="stylesheet" href="../../vendor/dist/theme/custom.css">
 </head>
 <body>
   <div class="reveal">
@@ -38,10 +30,26 @@
             <img src="../../images/profile.jpg" width="425px"></img>
           </div>
         </section>
+        <section>
+          <h3>See More:</h3>
+          <ul class="list-container" style="font-size: 30px;">
+            <li><a class="custom-link" href="https://hacks.mozilla.org/2015/08/es6-in-depth-modules/">Mozilla Hacks - ES6 In Depth: Modules</a></li>
+            <li><a class="custom-link" href="https://hacks.mozilla.org/2018/03/es-modules-a-cartoon-deep-dive/">Mozilla Hacks - ES modules: A cartoon deep-dive</a></li>
+            <li><a class="custom-link" href="https://v8.dev/features/modules#mjs">V8 Blog - JavaScript modules</a></li>
+            <li><a class="custom-link" href="https://ui.dev/javascript-modules-iifes-commonjs-esmodules/">UI.dev Blog - From IIFEs to CommonJS to ES6 Modules</a></li>
+            <li><a class="custom-link" href="https://github.com/rollup/rollup/wiki/ES6-modules">Rollup Wiki - ES6 Modules</a></li>
+            <li><a class="custom-link" href="https//www.freecodecamp.org/news/how-to-use-es6-modules-and-why-theyre-important-a9b20b480773/">freeCodeCamp - A Practical guide to ES6 modules</a></li>
+            <li><a class="custom-link" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules">MDN - JavaScript modules</a></li>
+            <li><a class="custom-link" href="https://exploringjs.com/es6/ch_modules.html">Exploring JS - Chapter 16: Modules</a></li>
+            <li><a class="custom-link" href="https://exploringjs.com/impatient-js/ch_modules.html">JavaScript for impatient programmers - Chapter 20: Modules</a></li>
+            <li><a class="custom-link" href="https://eloquentjavascript.net/10_modules.html">Eloquent Javascript - Chapter 10: Modules</a></li>
+            <li><a class="custom-link" href="https://www.ecma-international.org/ecma-262/7.0/index.html#sec-ecmascript-language-scripts-and-modules">ECMAScript® 2016 Language Specification - Topic 15: Scripts and Modules</a></li>
+          </ul>
+        </section>
       </div>
   </div>
   <script type="module">
-      import Reveal from '../../vendor/reveal.js/dist/reveal.esm.js'
+      import Reveal from '../../vendor/dist/reveal.esm.js'
       Reveal.initialize({ progress: false, hash: true, controls: false })
   </script>
 </body>

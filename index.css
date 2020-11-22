@@ -10,7 +10,7 @@
 
 .reveal .link-component {
   /* active when have more than one presentation */
-  /* flex-grow: 1; */
+  /* flex: 1; */
   border: 1px #666 solid;
   border-radius: 2%;
   align-self: center;
