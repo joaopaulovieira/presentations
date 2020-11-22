@@ -1,5 +1,0 @@
-#!/usr/bin/env bash
-
-npm i reveal.js && rm -rf vendor/ && rsync -r node_modules/reveal.js vendor/ && rm -rf node_modules && rm package-lock.json
-
-echo 'vendor updated!'
