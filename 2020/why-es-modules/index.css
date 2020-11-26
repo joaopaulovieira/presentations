@@ -2,6 +2,9 @@
   display: flex;
   align-items: center;
 }
+.flex-component--centralize-items {
+  justify-content: center;
+}
 .flex-component--separate-items-equally {
   justify-content: space-between;
 }
@@ -19,4 +22,11 @@
 }
 .list_item--disable-marker {
   list-style-type: none;
+}
+.icon-item__image {
+  height: 40px;
+  padding: 0 40px;
+}
+.icon-item__text {
+  font-size: 20px;
 }
