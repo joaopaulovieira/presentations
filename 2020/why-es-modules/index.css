@@ -1,0 +1,16 @@
+.flex-component {
+  display: flex;
+  align-items: center;
+}
+.flex-component--separate-items-equally {
+  justify-content: space-between;
+}
+.paragraph__container {
+  flex: 2;
+  font-size: 25px;
+  letter-spacing: -0.6px;
+  text-align: center;
+}
+.paragraph__item--comment-size {
+  font-size: 20px;
+}
