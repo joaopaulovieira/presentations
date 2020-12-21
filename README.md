@@ -1,4 +1,2 @@
-# presentations
-[Work in progress!] Presentations build with reveal.js
-
-https://joaopaulovieira.github.io/presentations/
+# Presentations
+Presentations build with [reveal.js](https://github.com/hakimel/reveal.js).
