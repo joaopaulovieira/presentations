@@ -18,11 +18,12 @@ html {
 }
 
 .reveal .link-component {
-  border: 1px #666 solid;
-  border-radius: 2%;
+  width: 640px;
+  height: 360px;
   align-self: center;
   transition: opacity .3s ease-out;
-  margin: 20px 2%;
+  margin: 50px 2%;
+  box-shadow: 10px 10px 42px 0 rgba(0,0,0,0.75);
 }
 
 .reveal .link-component__iframe {
@@ -32,4 +33,46 @@ html {
   position: inherit;
   max-height: 100%;
   max-width: 100%;
+}
+
+.reveal .link-component:after, .reveal .link-component:before {
+	mix-blend-mode:multiply;
+	filter:none;
+	z-index: -2;
+	content:'';
+	width:calc(100% + (50px * 2));
+	height:calc(100% + (50px * 2));
+	position: absolute;
+	display: block;
+	animation: border 10s ease-in-out infinite;
+	transform:translateX(-50px) translateY(-50px);
+}
+
+@keyframes border {
+  0%, 100% {
+    -webkit-clip-path: polygon(0 0, calc(100% - (33.3px)) calc(0% + (33.3px)), 100% 100%, calc(0% + (33.3px)) calc(100% - (33.3px)));
+    clip-path: polygon(0 0, calc(100% - (33.3px)) calc(0% + (33.3px)), 100% 100%, calc(0% + (33.3px)) calc(100% - (33.3px)));
+  }
+  50% {
+    -webkit-clip-path: polygon(calc(0% + (33.3px)) calc(0% + (33.3px)), 100% 0, calc(100% - (33.3px)) calc(100% - (33.3px)), 0 100%);
+    clip-path: polygon(calc(0% + (33.3px)) calc(0% + (33.3px)), 100% 0, calc(100% - (33.3px)) calc(100% - (33.3px)), 0 100%);
+  }
+}
+
+.reveal .link-component:after {
+	animation-delay: -5s;
+  background-color: #C22A1E;
+	clip-path: polygon(0 0, calc(100% - (33.3px)) calc(0% + (33.3px)), 100% 100%, calc(0% + (33.3px)) calc(100% - (33.3px)));
+}
+.reveal .link-component:before {
+	background-color: #C21E64;
+	clip-path: polygon(calc(0% + (33.3px)) calc(0% + (33.3px)), 100% 0, calc(100% - (33.3px)) calc(100% - (33.3px)), 0 100%);
+}
+
+.reveal .link-component:hover:after {
+	animation-delay: -0.1s;
+}
+
+.reveal .link-component:hover:before, .reveal .link-component:hover:after {
+  animation-duration: 1s;
 }
