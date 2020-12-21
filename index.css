@@ -1,6 +1,15 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
 .reveal .presentations-collection {
-  flex-wrap: wrap;
+  flex-flow: row wrap;
   justify-content: center;
+  align-content: center;
+  height: 100%;
 }
 
 .reveal .flex-component {
@@ -9,18 +18,11 @@
 }
 
 .reveal .link-component {
-  /* active when have more than one presentation */
-  /* flex: 1; */
   border: 1px #666 solid;
   border-radius: 2%;
   align-self: center;
-  opacity: 0.75;
   transition: opacity .3s ease-out;
-}
-
-.reveal .link-component:hover {
-  border: 1px #666 solid;
-  opacity: 1;
+  margin: 20px 2%;
 }
 
 .reveal .link-component__iframe {
