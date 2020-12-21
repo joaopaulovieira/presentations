@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Why you should use ES modules?</title>
+  <meta name="description" content="Why you should use ES modules?">
+  <meta name="author" content="João Paulo Vieira">
+  <link rel="shortcut icon" href="../../images/favicon.ico">
+  <link rel="stylesheet" href="../../vendor/dist/reveal.css">
+  <link rel="stylesheet" href="../../vendor/dist/theme/custom.css">
+  <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+      <section>
+        <div class="r-fit-text">
+          <img class="image-component" src="./images/thinking-1.gif">
+          <p>Why you should use ES modules?</p>
+        </div>
+      </section>
+    </div>
+  </div>
+  <script type="module">
+      import Reveal from '../../vendor/dist/reveal.esm.js'
+      Reveal.initialize({ progress: false, hash: true, controlsTutorial: false, controls: false })
+  </script>
+</body>
+</html>
