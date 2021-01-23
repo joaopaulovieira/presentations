@@ -1,9 +1,12 @@
 #!/usr/bin/env bash
 
-cp themes/custom.scss vendor/css/theme/source/ &&
-cd vendor &&
+cp themes/input/custom.scss deps/reveal.js/css/theme/source/ &&
+cd deps/reveal.js &&
 npm i &&
 npm run build -- css-themes &&
-cd ../
+cp dist/theme/custom.css  ../../themes/output/ &&
+git co . &&
+git clean -fd &&
+cd ../../
 
 echo 'custom themes created!'
